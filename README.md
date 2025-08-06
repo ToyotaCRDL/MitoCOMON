@@ -32,11 +32,11 @@ $ conda create -n MitoCOMON3 python biopython cutadapt chopper minimap2 miniasm 
 $ conda create -n primerprospector python=2.7 primerprospector
 ```
 
-For using MitoCOMON design, the main script of Primerprospector have to be modified. Modify the original script analyze_primers.py at Line# 586 (Add int()).
+For using MitoCOMON design, the main script of Primerprospector have to be modified. Revise the Line 586 of the script analyze_primers.py to return the variable as an integer.
+analyze_primers.py is typically located at "path/to/anaconda_or_miniconda/envs/primerprospector/lib/python2.7/site-packages/primerprospector/analyze_primers.py"
 ```
-# analyze_primers.py is typically located at "path/to/anaconda_or_miniconda/envs/primerprospector/lib/python2.7/site-packages/primerprospector/analyze_primers.py"
-
-return int(max(counts_all_max))
+-  return max(counts_all_max)
++  return int(max(counts_all_max))
 ```
 
 ## Quick start
@@ -207,3 +207,4 @@ See LICENSE.md.
 ## Citation
 
 Under review.
+
