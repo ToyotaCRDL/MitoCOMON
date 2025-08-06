@@ -74,8 +74,7 @@ Using the prepared mtDNA sequence file and taxonomy ID, run the following comman
 mitocomon_design.py -i /path/to/mitochondrion.1.1.genomic.fna -p file_prefix -t taxonomy_id# -d /path/to/nucl_gb.accession2taxid.gz -o ./output_directory -e primerprospector
 ```
 
-The list of primer candidates is at ./output_directory/03_primer_candidates/file_prefix_bestregions_seq_primer3_ppout_candidates.txt. For construction of a primer set, candidate primer pairs are highly recommended to be tested by wet experiments.
-
+From primer candidate sequences, a primer set should be manually designed. First, pick primer pairs producing expected size of amplicon sizes (4 to 8 kb in the paper). Picked primer pairs are highly recommended to be tested by wet experiments. Next, from amplified pairs, pick pairs so that neighboring amplicons have enough length of overlaps (0.5 to 3 kb in the paper).
 
 ## MitoCOMON assembly
 MitoCOMON assembly is a module to assemble the long reads that were obtained by sequencing the amplicons amplified using the designed primers. After filtering the reads with their length and quality, it clusters and obtain the consensus sequence of each amplicon, and then assembles the sequences utilizing the overlapping sequences.
@@ -206,4 +205,5 @@ options:
 See LICENSE.md.
 
 ## Citation
+
 Under review.
