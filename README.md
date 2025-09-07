@@ -206,5 +206,6 @@ See LICENSE.md.
 
 ## Citation
 
-Under review.
+[Furuta, Y., Kakita, M. & Tanaka, H. MitoCOMON: whole mitochondrial DNA sequencing by primer design and long overlapping amplicon assembly. BMC Genomics 26, 787 (2025). https://doi.org/10.1186/s12864-025-12010-0](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-025-12010-0)
+
 
