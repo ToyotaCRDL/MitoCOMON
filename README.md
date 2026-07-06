@@ -23,7 +23,7 @@ MitoCOMON is a pipeline for constructing complete sequence(s) of mitochondrial D
 ## Installation
 ```
 (1) Clone this repository.
-$ git clone https://github2.cae.tytlabs.co.jp/e1828/MitoCOMON.git
+$ git clone https://github.com/ToyotaCRDL/MitoCOMON.git
 
 (2) Create an environment for running MitoCOMON with installing the dependent packages (You can use mamba instead of conda to finish faster).
 $ conda create -n MitoCOMON3 python biopython cutadapt chopper minimap2 miniasm medaka mitos trnascan-se taxonkit seqkit mafft primer3
